@@ -1,14 +1,14 @@
 //task 6
 
-function maximumNumber(x, y, z){
+function returnMaximumNumber(num1, num2, num3){
     let maximumNum = 0;
     for(let i= 0; i < arguments.length ; i++){
-        if( x > y && x > z){
-            maximumNum = x;
-        } else if(y > x && y > z){
-            maximumNum = y;
+        if( num1 > num2 && num1 > num3){
+            maximumNum = num1;
+        } else if(num2 > num1 && num2 > num3){
+            maximumNum = num2;
         } else {
-            maximumNum = z;
+            maximumNum = num3;
         }
         return maximumNum;
     }
