@@ -4,14 +4,14 @@ function convertNumToHour(num){
     const minutes = num % 60;
     let hours = num/60 ;
     let howManyHours = parseInt(hours.toString().split(".")[0]);
-    const hourAbbr = howManyHours <= 1 ? "hour" : "hours";
+    let hourAbbr = howManyHours <= 1 ? "hour" : "hours";
     let minAbbr;
 
     if( minutes > 0){
         hours = (num - minutes)/60;
     }
     if(hours < 1){
-        return num;
+        hourAbbr = "hours";
     }
     if( minutes === 1){
         minAbbr = "minute";
