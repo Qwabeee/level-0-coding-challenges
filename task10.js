@@ -2,8 +2,8 @@
      //task 10
 
      function commonCharacters(str1, str2){
-        let input1 = str1.split("");
-        let input2 = str2.split("");
+        const input1 = str1.split("");
+        const input2 = str2.split("");
         let commonLetters = "";
     
         for(let letter in input1){
